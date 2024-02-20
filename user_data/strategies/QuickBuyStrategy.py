@@ -25,7 +25,8 @@ class QuickBuyStrategy(IStrategy):
         "40": 0.0,
         "30": 0.01,
         "20": 0.02,
-        "0": 0.04
+        "0": 0.01,
+        "0": 0.02
     }
 
     # Optimal stoploss designed for the strategy.

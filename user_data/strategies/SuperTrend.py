@@ -23,7 +23,7 @@ class SuperTrend(IStrategy):
     # Minimal ROI designed for the strategy.
     # This attribute will be overridden if the config file contains "minimal_roi".
     minimal_roi = {
-        "0": 100
+        "40": 0.0
     }
 
     # Optimal stoploss designed for the strategy.

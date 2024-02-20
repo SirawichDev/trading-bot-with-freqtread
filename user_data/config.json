@@ -1,12 +1,12 @@
 
 {
-    "max_open_trades": 2,
+    "max_open_trades": 1,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
     "tradable_balance_ratio": 1,
     "fiat_display_currency": "THB",
     "dry_run": false,
-    "dry_run_wallet": 300,
+    "dry_run_wallet": 100,
     "cancel_open_orders_on_exit": false,
     "unfilledtimeout": {
         "buy": 10,
@@ -37,8 +37,7 @@
             "rateLimit": 200
         },
         "pair_whitelist": [
-            "MANA/USDT",
-            "FTM/USDT"
+            "ONE/USDT"
         ],
         "pair_blacklist": [
             "BNB/.*"

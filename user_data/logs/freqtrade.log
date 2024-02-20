@@ -15849,3 +15849,920 @@ telegram.error.Conflict: Conflict: terminated by other getUpdates request; make 
 2021-12-18 12:41:18,858 - freqtrade.wallets - INFO - Wallets synced.
 2021-12-18 12:41:19,000 - freqtrade.wallets - INFO - Stake amount for pair DOGE/USDT is too small (8.08596615816 < 11.666666666666668), adjusting to 11.666666666666668.
 2021-12-18 12:41:19,002 - freqtrade.wallets - INFO - Adjusted stake amount for pair DOGE/USDT is more than 30% bigger than the desired stake (8.08596615816 * 1.3 > 80.8596615816), ignoring trade.
+2021-12-28 16:20:46,510 - freqtrade.loggers - INFO - Verbosity set to 0
+2021-12-28 16:20:46,512 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2021-12-28 16:20:46,515 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2021-12-28 16:20:46,517 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2021-12-28 16:20:46,519 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2021-12-28 16:20:46,521 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 2 ...
+2021-12-28 16:20:47,153 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2021-12-28 16:20:47,155 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2021-12-28 16:20:47,157 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2021-12-28 16:20:47,166 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2021-12-28 16:20:47,168 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2021-12-28 16:20:47,171 - freqtrade.freqtradebot - INFO - Starting freqtrade docker-0375a083
+2021-12-28 16:20:47,628 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy QuickBuyStrategy from '/freqtrade/user_data/strategies/QuickBuyStrategy.py'...
+2021-12-28 16:20:47,632 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2021-12-28 16:20:47,633 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2021-12-28 16:20:47,636 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2021-12-28 16:20:47,642 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2021-12-28 16:20:47,645 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2021-12-28 16:20:47,647 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2021-12-28 16:20:47,649 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2021-12-28 16:20:47,651 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'40': 0.0, '30': 0.01, '20': 0.02, '0': 0.04}
+2021-12-28 16:20:47,653 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 1m
+2021-12-28 16:20:47,655 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2021-12-28 16:20:47,657 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2021-12-28 16:20:47,659 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2021-12-28 16:20:47,660 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2021-12-28 16:20:47,662 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2021-12-28 16:20:47,664 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2021-12-28 16:20:47,665 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2021-12-28 16:20:47,667 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2021-12-28 16:20:47,669 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2021-12-28 16:20:47,671 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2021-12-28 16:20:47,673 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2021-12-28 16:20:47,675 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2021-12-28 16:20:47,677 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2021-12-28 16:20:47,679 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2021-12-28 16:20:47,681 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2021-12-28 16:20:47,683 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2021-12-28 16:20:47,685 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_offset: 0.0
+2021-12-28 16:20:47,687 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2021-12-28 16:20:47,688 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2021-12-28 16:20:47,691 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2021-12-28 16:20:47,696 - freqtrade.exchange.exchange - INFO - Using CCXT 1.62.42
+2021-12-28 16:20:47,704 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2021-12-28 16:20:47,714 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2021-12-28 16:20:49,306 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2021-12-28 16:20:49,727 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:20:49,731 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2021-12-28 16:20:49,854 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2021-12-28 16:20:49,979 - apscheduler.scheduler - INFO - Scheduler started
+2021-12-28 16:20:51,049 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forcesell'], ['forcebuy'], ['trades'], ['delete'], ['performance'], ['buys'], ['sells'], ['mix_tags'], ['stats'], ['daily'], ['weekly'], ['monthly'], ['count'], ['locks'], ['unlock', 'delete_locks'], ['reload_config', 'reload_conf'], ['show_config', 'show_conf'], ['stopbuy'], ['whitelist'], ['blacklist'], ['logs'], ['edge'], ['help'], ['version']]
+2021-12-28 16:20:51,060 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2021-12-28 16:20:51,068 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist AgeFilter from '/freqtrade/freqtrade/plugins/pairlist/AgeFilter.py'...
+2021-12-28 16:20:51,074 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist RangeStabilityFilter from '/freqtrade/freqtrade/plugins/pairlist/rangestabilityfilter.py'...
+2021-12-28 16:20:53,436 - AgeFilter - INFO - Validated 2 pairs.
+2021-12-28 16:20:53,985 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2021-12-28 16:20:55,020 - freqtrade.worker - INFO - Changing state to: RUNNING
+2021-12-28 16:20:55,036 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'40': 0.0, '30': 0.01, '20': 0.02, '0': 0.04}`\n*Stoploss:* `-0.1`\n*Timeframe:* `1m`\n*Strategy:* `QuickBuyStrategy`"}
+2021-12-28 16:20:55,540 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}, {'AgeFilter': 'AgeFilter - Filtering pairs with age less than 10 days'}, {'RangeStabilityFilter': 'RangeStabilityFilter - Filtering pairs with rate of change below 0.01 over the last days.'}]"}
+2021-12-28 16:20:56,035 - freqtrade.freqtradebot - INFO - Updating 0 open orders.
+2021-12-28 16:21:01,049 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:22:01,166 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:23:01,273 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:24:01,396 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:25:01,508 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:26:01,617 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:27:01,724 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:28:01,832 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:29:01,937 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:30:02,058 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:31:02,158 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:32:02,268 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:32:03,333 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:03,498 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:07,513 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:07,684 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:12,527 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:12,694 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:17,517 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:17,680 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:22,533 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:22,685 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:27,540 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:27,706 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:32,556 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:32,723 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:37,557 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:37,989 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:42,719 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:42,891 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:47,575 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:47,740 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:52,565 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:52,713 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:32:57,586 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:32:57,767 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:02,369 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:33:03,332 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:03,495 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:07,619 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:07,777 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:12,631 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:12,789 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:17,649 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:17,823 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:22,639 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:22,787 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:27,646 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:27,830 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:32,650 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:32,800 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:37,672 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:37,830 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:42,680 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:42,839 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:47,672 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:47,832 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:52,695 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:52,843 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:33:57,691 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:33:57,867 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:02,477 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:34:03,449 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:03,621 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:04,127 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:04,317 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:07,716 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:07,880 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:08,389 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:08,736 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:12,730 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:12,903 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:13,720 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:14,059 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:17,736 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:17,913 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:18,419 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:18,736 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:22,738 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:22,907 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:23,419 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:23,757 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:27,745 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:27,902 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:28,419 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:28,606 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:32,747 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:33,220 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:33,640 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:33,824 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:37,759 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:37,934 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:38,728 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:38,904 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:42,771 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:42,956 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:43,454 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:43,637 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:47,779 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:47,945 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:48,455 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:48,639 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:52,789 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:52,959 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:53,466 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:53,652 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:57,802 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:57,964 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:34:58,473 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:34:58,658 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:02,585 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:35:03,725 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:03,897 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:04,405 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:04,583 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:07,823 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:07,967 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:08,492 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:08,671 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:12,836 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:13,021 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:13,509 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:13,694 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:17,845 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:18,020 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:18,530 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:18,713 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:22,857 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:23,022 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:23,540 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:23,724 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:27,862 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:28,034 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:28,541 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:28,874 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:32,863 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:33,009 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:33,537 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:34,121 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:37,873 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:38,040 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:38,552 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:38,740 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:42,876 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:43,043 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:43,550 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:44,040 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:47,879 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:48,044 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:48,806 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:49,139 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:52,886 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:53,054 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:53,778 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:53,958 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:57,888 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:58,057 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:35:58,571 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:35:58,747 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:02,681 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:36:03,729 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:03,899 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:04,410 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:04,753 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:07,923 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:08,089 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:08,604 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:08,784 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:12,930 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:13,095 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:13,608 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:13,781 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:17,936 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:18,272 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:18,613 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:18,947 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:22,948 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:23,113 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:23,875 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:24,213 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:27,953 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:28,117 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:28,630 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:28,970 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:32,971 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:33,153 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:33,646 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:34,129 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:37,965 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:38,135 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:38,805 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:38,982 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:43,166 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:43,352 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:43,848 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:44,034 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:48,140 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:48,476 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:49,135 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:49,322 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:52,989 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:53,146 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:53,660 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:53,840 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:57,999 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:58,167 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:36:58,678 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:36:59,008 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:37:02,773 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:38:02,896 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:38:03,828 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:04,003 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:04,502 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:04,694 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:08,153 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:08,320 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:08,834 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:09,022 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:13,147 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:13,323 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:14,057 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:14,542 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:18,160 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:18,323 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:18,842 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:19,179 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:23,167 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:23,350 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:23,849 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:24,200 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:28,174 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:28,337 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:29,106 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:29,297 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:33,403 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:33,741 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:34,328 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:34,503 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:38,190 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:38,356 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:38,863 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:39,042 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:43,193 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:43,365 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:43,877 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:44,215 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:48,201 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:48,376 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:48,885 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:49,229 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:53,205 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:53,356 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:53,875 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:54,061 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:58,214 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:58,391 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:38:58,893 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:38:59,067 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:03,006 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:39:03,935 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:04,120 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:04,630 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:04,813 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:08,266 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:08,433 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:08,942 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:09,121 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:13,273 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:13,441 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:13,953 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:14,107 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:18,275 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:18,434 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:18,959 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:19,139 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:23,282 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:23,469 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:24,194 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:24,379 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:28,286 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:28,452 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:28,968 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:29,148 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:33,300 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:33,476 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:33,980 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:34,316 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:38,297 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:38,462 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:38,986 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:39,329 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:43,304 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:43,472 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:43,988 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:44,178 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:48,312 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:48,485 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:48,979 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:49,176 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:53,332 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:53,508 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:54,007 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:54,186 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:58,350 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:58,512 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:39:59,043 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:39:59,222 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:03,137 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:40:04,063 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:04,210 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:04,744 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:04,925 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:08,387 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:08,561 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:09,229 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:09,406 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:13,398 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:13,733 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:14,078 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:14,262 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:18,406 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:18,573 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:19,091 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:19,266 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:23,585 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:24,009 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:24,490 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:24,664 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:28,429 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:28,589 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:29,095 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:29,280 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:33,447 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:33,613 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:34,135 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:34,320 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:38,445 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:38,627 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:39,131 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:39,319 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:43,449 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:43,615 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:44,140 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:44,476 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:48,464 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:48,894 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:49,136 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:49,324 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:53,459 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:53,604 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:54,136 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:54,324 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:58,486 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:58,647 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:40:59,177 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:40:59,361 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:03,268 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:41:04,230 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:04,581 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:04,915 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:05,474 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:08,517 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:08,849 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:09,197 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:09,529 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:13,529 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:13,862 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:14,479 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:14,660 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:18,496 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:18,892 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:19,163 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:19,593 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:23,539 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:23,709 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:24,222 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:24,582 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:28,539 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:28,716 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:29,224 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:29,411 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:33,555 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:33,711 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:34,231 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:34,415 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:38,564 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:38,738 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:39,247 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:39,431 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:43,569 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:43,732 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:44,247 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:44,433 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:48,577 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:48,752 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:49,266 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:49,450 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:53,589 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:53,754 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:54,262 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:54,458 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:58,599 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:59,039 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:41:59,282 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:41:59,620 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:03,382 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:42:04,329 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:04,514 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:05,012 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:05,170 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:08,849 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:09,028 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:09,543 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:09,733 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:13,634 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:13,798 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:14,694 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:15,028 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:18,633 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:18,988 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:19,317 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:19,499 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:23,653 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:23,979 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:24,336 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:24,511 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:28,653 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:28,832 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:29,335 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:29,695 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:33,666 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:33,835 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:34,351 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:34,538 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:38,670 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:38,835 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:39,361 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:39,548 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:43,683 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:43,851 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:44,361 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:44,541 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:48,697 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:48,866 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:49,377 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:49,554 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:53,711 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:53,878 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:54,396 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:54,570 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:58,725 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:59,144 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:42:59,397 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:42:59,757 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:03,511 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:43:04,450 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:04,625 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:05,120 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:05,603 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:08,761 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:08,937 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:09,686 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:09,871 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:13,771 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:13,946 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:14,453 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:14,807 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:18,774 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:18,925 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:19,448 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:19,631 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:23,786 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:23,950 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:24,465 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:24,651 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:28,802 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:28,982 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:29,709 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:30,042 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:33,809 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:33,963 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:34,486 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:34,667 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:38,829 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:39,005 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:39,511 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:39,710 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:43,836 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:43,994 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:44,518 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:44,692 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:48,851 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:49,023 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:49,823 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:50,010 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:53,860 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:54,240 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:54,537 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:55,055 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:58,870 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:43:59,030 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:43:59,694 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:00,073 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:03,661 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:44:04,607 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:04,780 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:05,293 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:05,474 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:08,913 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:09,235 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:09,596 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:09,940 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:13,914 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:14,089 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:14,597 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:14,778 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:18,927 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:19,096 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:19,610 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:19,941 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:23,939 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:24,111 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:24,624 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:24,798 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:28,940 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:29,101 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:29,618 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:29,780 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:33,956 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:34,125 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:34,630 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:34,816 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:38,970 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:39,153 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:39,663 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:39,847 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:43,973 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:44,151 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:44,655 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:44,835 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:48,984 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:49,154 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:49,933 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:50,121 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:54,238 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:54,425 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:55,065 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:55,252 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:44:59,683 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:44:59,852 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:00,367 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:00,541 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:03,779 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:45:04,750 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:04,929 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:05,672 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:05,862 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:09,035 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:09,371 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:09,712 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:10,044 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:14,044 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:14,219 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:14,955 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:15,140 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:19,034 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:19,179 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:19,708 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:19,885 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:24,053 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:24,218 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:24,733 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:24,920 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:29,054 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:29,212 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:29,729 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:30,080 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:34,066 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:34,240 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:34,749 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:34,931 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:39,072 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:39,236 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:39,758 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:39,948 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:44,043 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:44,197 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:44,713 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:44,894 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:49,086 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:49,277 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:50,085 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:50,427 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:54,089 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:54,414 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:55,061 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:55,477 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:59,104 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:59,286 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:45:59,798 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:45:59,983 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:46:03,894 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:47:04,018 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:47:04,937 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:05,101 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:05,611 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:05,792 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:09,250 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:09,429 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:09,945 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:10,298 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:14,260 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:14,424 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:14,942 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:15,124 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:19,279 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:19,447 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:20,101 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:20,438 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:24,296 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:24,484 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:24,981 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:25,383 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:29,298 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:29,457 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:29,983 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:30,317 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:34,315 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:34,492 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:34,999 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:35,189 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:39,314 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:39,716 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:40,225 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:40,419 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:44,319 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:44,497 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:44,999 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:45,181 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:49,578 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:49,755 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:50,504 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:50,697 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:54,342 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:54,510 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:55,017 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:55,207 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:47:59,350 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:47:59,523 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:00,035 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:00,214 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:04,135 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:48:05,075 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:05,231 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:05,751 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:05,923 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:09,372 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:09,552 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:10,050 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:10,448 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:14,376 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:14,521 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:15,042 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:15,209 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:19,389 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:19,555 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:20,370 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:20,557 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:24,394 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:24,575 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:25,088 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:25,269 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:29,406 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:29,579 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:30,094 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:30,283 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:34,412 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:34,578 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:35,088 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:35,271 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:39,414 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:39,832 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:40,309 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:40,653 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:44,422 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:44,574 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:45,103 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:45,461 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:49,437 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:49,609 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:50,368 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:50,557 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:54,438 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:54,598 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:55,118 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:55,294 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:48:59,454 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:48:59,625 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:00,130 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:00,315 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:04,244 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:49:05,188 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:05,367 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:05,871 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:06,051 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:09,492 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:09,664 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:10,169 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:10,358 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:14,568 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:14,716 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:15,244 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:15,421 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:19,502 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:19,674 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:20,185 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:20,373 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:24,510 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:24,678 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:25,193 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:25,374 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:29,695 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:30,116 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:30,382 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:30,557 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:34,539 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:34,709 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:35,213 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:35,399 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:39,535 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:39,943 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:40,218 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:40,557 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:44,538 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:44,722 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:45,212 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:45,396 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:49,553 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:49,722 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:50,476 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:50,657 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:54,520 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:54,678 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:55,203 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:55,381 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:49:59,566 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:49:59,753 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:00,250 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:00,434 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:04,355 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:50:05,292 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:05,460 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:05,975 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:06,168 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:09,596 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:09,762 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:10,283 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:10,472 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:14,603 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:14,774 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:15,288 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:15,470 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:19,614 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:19,784 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:20,290 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:20,480 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:24,621 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:24,792 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:25,306 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:25,492 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:29,634 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:29,814 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:30,321 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:30,512 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:34,816 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:35,000 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:35,737 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:36,068 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:39,647 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:40,050 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:40,632 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:40,957 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:44,649 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:44,821 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:45,328 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:45,515 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:49,868 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:50,053 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:50,558 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:50,744 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:54,668 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:54,854 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:55,351 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:55,528 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:50:59,663 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:50:59,987 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:00,338 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:00,513 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:04,463 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:51:04,495 - freqtrade.rpc.rpc - WARNING -  Could not get rate for pair NEBL.
+2021-12-28 16:51:04,502 - freqtrade.rpc.rpc - WARNING -  Could not get rate for pair LDXRP.
+2021-12-28 16:51:04,504 - freqtrade.rpc.rpc - WARNING -  Could not get rate for pair LDDOGE.
+2021-12-28 16:51:04,506 - freqtrade.rpc.rpc - WARNING -  Could not get rate for pair LDBTT.
+2021-12-28 16:51:04,508 - freqtrade.rpc.rpc - WARNING -  Could not get rate for pair LDFXS.
+2021-12-28 16:51:05,400 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:05,556 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:06,076 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:06,249 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:09,698 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:09,869 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:10,379 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:10,565 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:14,710 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:14,888 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:15,390 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:15,580 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:19,721 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:19,911 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:20,390 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:20,563 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:24,733 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:24,915 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:25,420 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:25,576 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:29,735 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:29,898 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:30,413 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:30,898 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:34,747 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:34,923 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:35,745 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:35,932 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:39,748 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:39,939 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:40,660 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:40,848 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:44,767 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:44,950 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:45,448 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:45,636 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:49,769 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:49,938 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:50,452 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:50,638 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:54,775 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:54,941 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:55,447 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:55,829 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:51:59,760 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:51:59,905 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:52:00,425 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:52:00,587 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:52:04,565 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-0375a083', state='RUNNING'
+2021-12-28 16:52:05,690 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:52:06,056 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-12-28 16:52:06,354 - freqtrade.wallets - INFO - Wallets synced.
+2021-12-28 16:52:06,501 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
